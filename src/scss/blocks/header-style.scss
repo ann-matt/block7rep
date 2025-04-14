@@ -1,1 +1,43 @@
+$whiteColor: #ffffff;
+$pinkColor: #ff3e79;
+$borderColor1: #b8ffec;
 
+@mixin icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 40px;
+  height: 40px;
+  background-color: #ff3e79;
+  border-radius: 50%;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-left: 16px;
+  padding-right: 16px;
+
+  height: 88px;
+  width: 100%;
+  background-color: $whiteColor;
+
+  border-bottom: 1px solid $borderColor1;
+
+  &__icon {
+    @include icon;
+    &:nth-child(3) {
+      display: none;
+    }
+    &:nth-child(4) {
+      display: none;
+    }
+    &:nth-child(5) {
+      display: none;
+    }
+  }
+}
