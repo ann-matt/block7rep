@@ -1,6 +1,7 @@
 $whiteColor: #ffffff;
 $pinkColor: #ff3e79;
 $borderColor1: #b8ffec;
+$bgColor: #f8f8f8;
 
 @mixin icon {
   display: flex;
@@ -11,6 +12,19 @@ $borderColor1: #b8ffec;
   height: 40px;
   background-color: #ff3e79;
   border-radius: 50%;
+}
+
+@mixin divider {
+  width: 2px;
+  height: 32px;
+  background-color: $bgColor;
+}
+@mixin logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 96px;
+  height: 51px;
 }
 
 .nav {
@@ -28,16 +42,55 @@ $borderColor1: #b8ffec;
 
   border-bottom: 1px solid $borderColor1;
 
-  &__icon {
-    @include icon;
-    &:nth-child(3) {
+  @media (min-width: 768px) {
+  }
+
+  &__item {
+    @media (min-width: 768px) {
+      margin-right: 20px;
+    }
+
+    &:nth-child(2) {
       display: none;
+      @media (min-width: 768px) {
+        display: flex;
+        align-self: center;
+        margin-right: 16px;
+      }
+    }
+    &:nth-child(3) {
+      @media (min-width: 768px) {
+        align-self: center;
+        margin-right: auto;
+      }
     }
     &:nth-child(4) {
       display: none;
     }
     &:nth-child(5) {
       display: none;
+      @media (min-width: 768px) {
+        display: flex;
+      }
     }
+    &:nth-child(6) {
+      display: none;
+      @media (min-width: 768px) {
+        display: flex;
+      }
+    }
+    &:nth-child(7) {
+      display: none;
+      @media (min-width: 768px) {
+        display: flex;
+      }
+    }
+  }
+
+  &__icon {
+    @include icon;
+  }
+  &__divider {
+    @include divider;
   }
 }
