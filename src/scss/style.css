@@ -1,0 +1,13 @@
+@font-face {
+  font-family: "Comic";
+  src: url("../fonts/comic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+body, p {
+  padding: 1rem;
+  margin: 0;
+  font-family: Comic, sans-serif;
+  background-color: pink;
+  color: red;
+}/*# sourceMappingURL=style.css.map */
