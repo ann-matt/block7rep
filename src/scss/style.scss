@@ -20,6 +20,33 @@ $borderColor1: #b8ffec;
   src: url('../fonts/TTLakes-Bold.ttf') format('truetype');
   font-weight: normal;
 }
+
+@mixin title {
+  font-family: 'TT Lakes Regular';
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #7e7e82;
+  font-weight: 300;
+
+  background-color: white;
+
+  padding: 16px;
+
+  border-top: 1px solid $borderColor1;
+  border-bottom: 1px solid $borderColor1;
+}
+
+@mixin card1 {
+  width: 240px;
+  height: 72px;
+  border: 1px solid $grayColor;
+  border-radius: 10px;
+  background-color: white;
+
+  display: flex;
+  align-items: center;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -39,3 +66,4 @@ body {
 @import './blocks/header-style.scss';
 @import './blocks/block1-menu.scss';
 @import './blocks/block1-content.scss';
+@import './blocks/block2.scss';

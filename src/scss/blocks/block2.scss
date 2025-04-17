@@ -1,0 +1,47 @@
+$textColor2: #7e7e82;
+$borderColor1: #b8ffec;
+$grayColor: #eaeaea;
+
+/* @mixin title {
+  font-family: 'TT Lakes Regular';
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #7e7e82;
+  font-weight: 300;
+
+  background-color: white;
+
+  padding: 16px;
+
+  border-top: 1px solid $borderColor1;
+  border-bottom: 1px solid $borderColor1;
+} */
+
+/* @mixin card1 {
+  width: 240px;
+  height: 72px;
+  border: 1px solid $grayColor;
+  border-radius: 10px;
+  background-color: white;
+
+  display: flex;
+  align-items: center;
+} */
+
+.block2__title {
+  @include title;
+}
+
+.card {
+  &__list {
+    display: flex;
+    flex-direction: column;
+  }
+  &__item {
+    @include card1;
+  }
+  &__link {
+  }
+  &__img {
+  }
+}
