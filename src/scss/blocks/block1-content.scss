@@ -1,0 +1,52 @@
+.content {
+  display: flex;
+  flex-direction: column;
+
+  font-family: 'TT Lakes Regular';
+  font-size: 14px;
+
+  margin: 0;
+  margin-bottom: 20px;
+
+  @media (min-width: 767px) {
+    flex-direction: row;
+  }
+
+  &__text {
+    margin: 0 16px;
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 767px) {
+      width: 70vw;
+      margin-right: 10vw;
+    }
+  }
+  &__btn {
+    border: none;
+    background: transparent;
+
+    font-family: 'TT Lakes Medium';
+    font-size: 16px;
+
+    margin: 16px auto 16px 16px;
+
+    &:before {
+      content: url('../img/arrow.png');
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+    }
+  }
+  &__photo {
+    margin: 0;
+    padding: 0;
+
+    @media (min-width: 767px) {
+      margin-right: 16px;
+    }
+  }
+}
+.photo {
+  width: 100%;
+}
