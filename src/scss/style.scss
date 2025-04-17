@@ -1,6 +1,6 @@
 $bgColor: #f8f8f8;
 $textColor1: #1b1c21;
-$textColor2: #1b1c21;
+$textColor2: #7e7e82;
 $pinkColor: #ff3e79;
 $grayColor: #eaeaea;
 $borderColor1: #b8ffec;
@@ -26,4 +26,15 @@ $borderColor1: #b8ffec;
   margin: 0;
 }
 
+body,
+html {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+body {
+  background-color: $bgColor;
+}
+
 @import './blocks/header-style.scss';
+@import './blocks/block1-menu.scss';
