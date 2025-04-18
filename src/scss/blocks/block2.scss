@@ -35,15 +35,13 @@ $grayColor: #eaeaea;
 .card {
   &__list {
     display: flex;
-    flex-direction: ;
+    flex-direction: row;
   }
   &__item {
     @include card1;
   }
   &__link {
     text-decoration: none;
-  }
-  &__img {
   }
   &__button {
     background-color: white;

@@ -1,3 +1,4 @@
+$pinkColor: #ff3e79;
 .content {
   display: flex;
   flex-direction: column;
@@ -31,6 +32,10 @@
 
     margin: 16px auto 16px 16px;
 
+    &:hover {
+      color: $pinkColor;
+    }
+
     &:before {
       content: url('../img/arrow.png');
       display: inline-block;
@@ -49,4 +54,8 @@
 }
 .photo {
   width: 100%;
+}
+
+.readmore-btn.rotated::before {
+  transform: rotate(180deg);
 }
