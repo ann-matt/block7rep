@@ -1,6 +1,9 @@
 import '../scss/style.scss'
+import '../js/blocksjs/showMore'
 
 console.log('Works!')
+
+/* Block 1: Readmore interaction function  */
 
 const text = document.querySelector('.textSpan')
 const btn = document.querySelector('.readmore-btn')
@@ -18,14 +21,14 @@ btn.addEventListener('click', function () {
   }
 })
 
-/* let swiperInstance
+/* Block 2: swiper interaction function */
 
+let swiperInstance
 function initSwiper() {
   if (window.innerWidth < 768 && !swiperInstance) {
-    swiperInstance = new Swiper('.card__wrapper', {
+    swiperInstance = new Swiper('.swiper', {
       slidesPerView: 'auto',
       spaceBetween: 16,
-      loop: true,
 
       // Pagination bullets
       pagination: {
@@ -49,4 +52,3 @@ function initSwiper() {
 initSwiper()
 
 window.addEventListener('resize', initSwiper)
- */
