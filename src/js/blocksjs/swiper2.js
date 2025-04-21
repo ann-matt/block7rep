@@ -6,8 +6,8 @@ function initSwiper2() {
       spaceBetween: 16,
 
       navigation: {
-        nextEl: '.swiper2-button-next',
-        prevEl: '.swiper2-button-prev'
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
       },
 
       // Pagination bullets

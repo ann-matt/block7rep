@@ -62,8 +62,16 @@ body {
   background-color: $bgColor;
 }
 
+main {
+  max-width: 1024px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 @import './blocks/header-style.scss';
 @import './blocks/block1-menu.scss';
 @import './blocks/block1-content.scss';
 @import './blocks/block2.scss';
 @import './blocks/block3.scss';
+@import './blocks/block4.scss';
+@import './blocks/footer.scss';

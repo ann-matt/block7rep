@@ -32,7 +32,7 @@ $grayColor: #eaeaea;
   @include title;
 }
 
-.block2 .card {
+.card {
   &__list {
     display: flex;
     flex-direction: row;
@@ -45,13 +45,18 @@ $grayColor: #eaeaea;
       row-gap: 16px;
     }
   }
-  &__item {
+  &__img {
+    max-width: 140px;
+  }
+  &__item1 {
     width: 240px;
     height: 72px;
     border: 1px solid $grayColor;
     border-radius: 10px;
     background-color: white;
     display: flex;
+    justify-content: center;
+    align-items: center;
 
     @media (min-width: 768px) {
       width: 224px;
@@ -59,14 +64,15 @@ $grayColor: #eaeaea;
   }
   &__link {
     display: flex;
-    /* justify-content: center;
-    align-items: center; */
+    /* ustify-content: center;
+    align-items: center;  */
     padding: 16px 20px;
 
     text-decoration: none;
     width: 240px;
     height: 72px;
   }
+
   &__button {
     background-color: white;
     width: 40px;
@@ -124,7 +130,7 @@ $grayColor: #eaeaea;
   transform: rotate(180deg);
 }
 
-.swiper2-pagination {
+.swiper-pagination {
   display: flex;
   justify-content: center;
   margin-top: 16px;

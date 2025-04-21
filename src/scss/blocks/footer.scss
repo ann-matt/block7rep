@@ -1,0 +1,11 @@
+$textColor2: #7e7e82;
+$borderColor1: #b8ffec;
+$grayColor: #eaeaea;
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid $borderColor1;
+  background-color: white;
+  margin-top: 16px;
+}
