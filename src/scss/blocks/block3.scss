@@ -1,3 +1,63 @@
 .block3__title {
   @include title;
 }
+.block3 .card {
+  margin: 16px;
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+  }
+  &__item {
+    padding: 16px;
+    width: 240px;
+    height: 160px;
+    border: 1px solid $grayColor;
+    border-radius: 10px;
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+  }
+  &__link {
+    text-decoration: none;
+    font-family: 'TT Lakes Medium';
+    color: black;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  &__button {
+    align-self: flex-end;
+    margin-top: auto;
+
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #ff3e79;
+    color: #ff3e79;
+
+    border-radius: 50%;
+    margin-left: auto;
+    transition: 0.2s ease;
+
+    &:hover {
+      color: #fff;
+      background-color: #ff3e79;
+    }
+  }
+}
+
+.swiper-pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+.swiper-pagination-bullet {
+  opacity: 0.5;
+  background: #b5b6bc;
+}
+.swiper-pagination-bullet-active {
+  opacity: 1;
+}

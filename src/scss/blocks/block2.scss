@@ -32,7 +32,7 @@ $grayColor: #eaeaea;
   @include title;
 }
 
-.card {
+.block2 .card {
   &__list {
     display: flex;
     flex-direction: row;
@@ -59,8 +59,8 @@ $grayColor: #eaeaea;
   }
   &__link {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center;
+    align-items: center; */
     padding: 16px 20px;
 
     text-decoration: none;
@@ -122,4 +122,10 @@ $grayColor: #eaeaea;
 
 .btn-show-more.rotated::before {
   transform: rotate(180deg);
+}
+
+.swiper2-pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
 }
