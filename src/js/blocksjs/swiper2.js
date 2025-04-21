@@ -19,7 +19,7 @@ function initSwiper2() {
   } else if (window.innerWidth >= 768 && swiperInstance2) {
     swiperInstance2.destroy(true, true)
     swiperInstance2 = null
-    pagination = false
+    /* pagination = false */
   }
 }
 

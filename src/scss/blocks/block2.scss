@@ -30,6 +30,9 @@ $grayColor: #eaeaea;
 
 .block2__title {
   @include title;
+  @media (min-width: 769px) {
+    display: flex;
+  }
 }
 
 .card {
