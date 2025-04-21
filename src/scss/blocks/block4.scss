@@ -8,6 +8,9 @@ $grayColor: #eaeaea;
     margin-top: 10px;
     @include title;
   }
+  &__headings {
+    display: none;
+  }
   &__note {
     font-family: 'TT Lakes Regular';
     font-size: 14px;
@@ -90,4 +93,52 @@ $grayColor: #eaeaea;
 }
 .swiper-pagination-bullet-active {
   opacity: 1;
+}
+
+@media (min-width: 768px) {
+  .block4 {
+    padding: 16px;
+    &__table {
+      display: flex;
+      flex-direction: column;
+      max-width: 1056px;
+    }
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+    &__headings {
+      font-family: 'TT Lakes Medium';
+      font-size: 14px;
+      color: #7e7e82;
+      display: grid;
+      grid-template-columns: 1fr 120px 120px 130px;
+      padding: 10px;
+    }
+  }
+  .card3 {
+    max-width: 1056px;
+    display: grid;
+    grid-template-columns: 1fr 120px 250px;
+    padding: 12px;
+    margin: 0;
+    align-items: center;
+
+    width: 100%;
+    height: auto;
+    &__btn {
+      margin-right: auto;
+    }
+  }
+  h2 {
+    display: none;
+  }
+  p {
+    margin-bottom: 0;
+  }
+  .solidation {
+    flex-direction: row;
+    align-items: center;
+  }
 }
