@@ -36,6 +36,9 @@ $borderColor1: #b8ffec;
   border-bottom: 1px solid $borderColor1;
 }
 
+a {
+  text-decoration: none;
+}
 /* @mixin card1 {
   width: 240px;
   height: 72px;

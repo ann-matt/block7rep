@@ -3,9 +3,52 @@ $borderColor1: #b8ffec;
 $grayColor: #eaeaea;
 
 .footer {
+  max-width: 1024px;
+  margin-right: auto;
+  margin-left: auto;
   display: flex;
   flex-direction: column;
+  margin-top: 16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  row-gap: 16px;
+
+  align-items: center;
+
   border-top: 1px solid $borderColor1;
   background-color: white;
-  margin-top: 16px;
+
+  font-family: 'TT Lakes Medium';
+  font-size: 14px;
+  color: $textColor2;
+
+  row-gap: 20px;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    padding: 16px;
+  }
+  &__link {
+    color: $textColor2;
+  }
+  &__p {
+    text-align: center;
+  }
+  &__one {
+    @media (min-width: 768px) {
+      width: 33%;
+    }
+  }
+  &__two {
+    @media (min-width: 768px) {
+      width: 33%;
+    }
+  }
+  &__three {
+    @media (min-width: 768px) {
+      width: 33%;
+
+      text-align: right;
+    }
+  }
 }
