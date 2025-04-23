@@ -1,6 +1,9 @@
 .block3__title {
   @include title;
   margin-top: 16px;
+  @media (min-width: 768px) {
+    display: flex;
+  }
 }
 .card2 {
   display: flex;
