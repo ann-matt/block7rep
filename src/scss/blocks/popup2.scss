@@ -2,7 +2,7 @@ $textColor1: #1b1c21;
 $textColor2: #7e7e82;
 $pinkColor: #ff3e79;
 $borderColor1: #b8ffec;
-.popup1 {
+.popup2 {
   position: fixed;
   top: 0;
   left: 0;
@@ -79,7 +79,7 @@ $borderColor1: #b8ffec;
       margin-right: 12px;
     }
   }
-  &__input {
+  &__input-tel {
     font-family: 'TT Lakes Medium';
     font-size: 16px;
     color: #b5b6bc;
@@ -90,7 +90,36 @@ $borderColor1: #b8ffec;
     min-width: 240px;
     max-width: 376px;
     padding: 12px 16px;
-    margin: 0 32px;
+    margin: 10px 32px;
+  }
+  &__input-email {
+    font-family: 'TT Lakes Medium';
+    font-size: 16px;
+    color: #b5b6bc;
+    border: none;
+    border: 1px solid #eaeaea;
+    border-radius: 7px;
+    height: 48px;
+    min-width: 240px;
+    max-width: 376px;
+    padding: 12px 16px;
+    margin: 10px 32px;
+    width: auto;
+  }
+  &__input-mes {
+    font-family: 'TT Lakes Medium';
+    font-size: 16px;
+    color: #b5b6bc;
+    border: none;
+    border: 1px solid #eaeaea;
+    border-radius: 7px;
+    width: auto;
+    min-width: 280px;
+    max-width: 376px;
+    padding: 12px 16px;
+    margin: 10px 32px;
+    text-align: left;
+    resize: none;
   }
   &__text {
     font-family: 'TT Lakes Medium';
@@ -131,6 +160,6 @@ $borderColor1: #b8ffec;
   margin-left: 10px;
 }
 
-.popup1.hidden {
+.popup2.hidden {
   visibility: hidden;
 }
