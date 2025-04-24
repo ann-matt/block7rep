@@ -13,7 +13,7 @@ closeBtn.addEventListener('click', function () {
   mainContent.classList.remove('blur')
 })
 
-popup1.addEventListener('click', function (e) {
+popup2.addEventListener('click', function (e) {
   if (!e.target.closest('.popup2__body')) {
     popup2.classList.add('hidden')
     mainContent.classList.remove('blur')
