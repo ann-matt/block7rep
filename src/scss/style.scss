@@ -53,6 +53,7 @@ a {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  list-style-type: none;
 }
 
 body,
@@ -81,4 +82,4 @@ main {
 @import './blocks/popup1.scss';
 @import './blocks/main-content.scss';
 @import './blocks/popup2.scss';
-@import './blocks/header2.scss';
+@import './blocks/hidden-menu.scss';

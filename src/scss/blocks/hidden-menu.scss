@@ -1,0 +1,141 @@
+$whiteColor: #ffffff;
+$pinkColor: #ff3e79;
+$borderColor1: #b8ffec;
+$bgColor: #f8f8f8;
+
+@mixin icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 40px;
+  height: 40px;
+  background-color: #ff3e79;
+  border-radius: 50%;
+}
+
+@mixin divider {
+  width: 2px;
+  height: 32px;
+  background-color: $bgColor;
+}
+@mixin logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 96px;
+  height: 51px;
+}
+.hid-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: rgba(252, 252, 252, 0.938);
+  width: 100vw;
+  height: 100vh;
+}
+
+.hidden-menu {
+  width: 320px;
+  height: 100vh;
+  background-color: #ffffff;
+  border-right: 1px solid $borderColor1;
+  padding: 16px 24px;
+  display: flex;
+  flex-direction: column;
+  &__closeBrg {
+    @include icon;
+  }
+  &__logo {
+    @include logo;
+  }
+  &__search {
+    @include icon;
+    margin-left: auto;
+  }
+  &__phone {
+    @include icon;
+  }
+  &__mes {
+    @include icon;
+  }
+  &__prof {
+    @include icon;
+  }
+  &__sec1 {
+    display: flex;
+    align-items: center;
+    column-gap: 14px;
+    margin-bottom: 20px;
+  }
+  &__sec2 {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    font-family: 'TT Lakes Medium';
+    font-size: 16px;
+  }
+  &__link {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 24px;
+    color: black;
+    &:hover {
+      color: #7e7e82;
+    }
+  }
+
+  &__link:hover::before {
+    content: '';
+    width: 4px;
+    height: 32px;
+    border-radius: 0 8px 8px 0;
+    border: 3px solid #41f6d7;
+    margin-left: -23px;
+    margin-right: 18px;
+  }
+  &__sec3 {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 16px;
+
+    &__icons {
+      display: flex;
+      flex-direction: row;
+      column-gap: 14px;
+      margin-bottom: 16px;
+    }
+    &__email {
+      display: inline-block;
+      margin-bottom: 12px;
+
+      font-family: 'TT Lakes Medium';
+      font-weight: 400;
+      font-size: 16px;
+      color: #1b1c21;
+      margin-bottom: 14px;
+    }
+    &__phone {
+      display: inline-block;
+      margin-bottom: 16px;
+
+      font-family: 'TT Lakes Bold';
+      font-weight: 900;
+      font-size: 24px;
+      color: #1b1c21;
+    }
+    &__langs {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      column-gap: 7px;
+
+      font-family: 'TT Lakes Bold';
+      font-size: 16px;
+      margin-bottom: 32px;
+    }
+  }
+}

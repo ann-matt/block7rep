@@ -1,6 +1,5 @@
 let swiperInstance3
 function initSwiper3() {
-  console.log('initSwiper3 запускается. Ширина окна:', window.innerWidth)
   if (window.innerWidth < 768 && !swiperInstance3) {
     swiperInstance3 = new Swiper('.swiper3', {
       slidesPerView: 'auto',
