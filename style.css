@@ -1,16 +1,16 @@
 @font-face {
   font-family: 'TT Lakes Regular';
-  src: url(./fonts/TTLakes-Regular.ttf) format("truetype");
+  src: url(/block7rep/./fonts/TTLakes-Regular.ttf) format("truetype");
   font-weight: normal; }
 
 @font-face {
   font-family: 'TT Lakes Medium';
-  src: url(./fonts/TTLakes-Medium.ttf) format("truetype");
+  src: url(/block7rep/./fonts/TTLakes-Medium.ttf) format("truetype");
   font-weight: normal; }
 
 @font-face {
   font-family: 'TT Lakes Bold';
-  src: url(./fonts/TTLakes-Bold.ttf) format("truetype");
+  src: url(/block7rep/./fonts/TTLakes-Bold.ttf) format("truetype");
   font-weight: normal; }
 
 a {
@@ -267,7 +267,7 @@ header {
     .content__btn:hover {
       color: #ff3e79; }
     .content__btn:before {
-      content: url(./static/arrow.png);
+      content: url(/block7rep/./static/arrow.png);
       display: inline-block;
       width: 24px;
       height: 24px; }
@@ -396,7 +396,7 @@ header {
       .btn-show-more:hover {
         color: #ff3e79; }
       .btn-show-more:before {
-        content: url(./static/arrow.png);
+        content: url(/block7rep/./static/arrow.png);
         display: inline-block;
         width: 24px;
         height: 24px; } }
@@ -518,7 +518,7 @@ header {
       .btn-show-more2:hover {
         color: #ff3e79; }
       .btn-show-more2:before {
-        content: url(./static/arrow.png);
+        content: url(/block7rep/./static/arrow.png);
         display: inline-block;
         width: 24px;
         height: 24px; } }
