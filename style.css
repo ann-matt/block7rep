@@ -1011,6 +1011,7 @@ header {
       .hid-wrapper.hid {
         position: static;
         width: 320px;
+        height: 100%;
         display: flex;
         z-index: 565665; } }
 
@@ -1027,6 +1028,7 @@ header {
     @media (min-width: 1440px) {
       .hidden-menu.hid {
         width: 320px;
+        height: 100%;
         position: static;
         display: flex;
         z-index: 565665; } }
