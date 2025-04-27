@@ -2,3 +2,15 @@
   filter: blur(4px);
   transition: filter 0.3 ease;
 }
+
+.main-content {
+  max-width: 1220px;
+  margin-right: auto;
+  margin-left: auto;
+  @media (min-width: 1440px) {
+    display: flex;
+    flex-direction: row;
+    margin-right: 0;
+    margin-left: 0;
+  }
+}

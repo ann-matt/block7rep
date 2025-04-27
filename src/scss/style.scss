@@ -60,23 +60,34 @@ body,
 html {
   overflow-x: hidden;
   width: 100%;
-}
-
-body {
   background-color: $bgColor;
 }
 
 main {
+  background-color: $bgColor;
+  @media (min-width: 1440px) {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+}
+body {
+  @media (min-width: 1440px) {
+    max-width: 1440px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+/* main {
   max-width: 1120px;
   margin-right: auto;
-  margin-left: auto;
-  @media (min-width: 1440px) {
+  margin-left: auto; */
+/* @media (min-width: 1440px) {
     margin-right: 0;
   }
   @media (min-width: 1470px) {
     margin-right: 0%;
-  }
-}
+  } */
 
 @import './blocks/header-style.scss';
 @import './blocks/block1-menu.scss';

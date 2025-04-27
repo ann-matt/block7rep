@@ -36,13 +36,12 @@ $bgColor: #f8f8f8;
   height: 100vh;
   &.hid {
     display: none;
-  }
-
-  @media (min-width: 1439px) {
-    width: 320px;
-  }
-  @media (min-width: 1442px) {
-    margin-left: 1%;
+    @media (min-width: 1440px) {
+      position: static;
+      width: 320px;
+      display: flex;
+      z-index: 565665;
+    }
   }
 }
 
@@ -56,13 +55,19 @@ $bgColor: #f8f8f8;
   flex-direction: column;
   &.hid {
     display: none;
-  }
-  @media (min-width: 1439px) {
-    position: relative;
+    @media (min-width: 1440px) {
+      width: 320px;
+      position: static;
+      display: flex;
+      z-index: 565665;
+    }
   }
 
   &__closeBrg {
     @include icon;
+    @media (min-width: 1440px) {
+      display: none;
+    }
   }
   &__logo {
     @include logo;
@@ -160,5 +165,12 @@ $bgColor: #f8f8f8;
         color: #7e7e82;
       }
     }
+  }
+}
+.hid {
+  @media (min-width: 1440px) {
+    display: flex;
+    position: static;
+    width: 320px;
   }
 }

@@ -76,6 +76,13 @@ $grayColor: #eaeaea;
     justify-content: space-between;
     align-items: center;
     margin-left: auto;
+    transition: 0.2s ease;
+    &:hover {
+      color: #251525;
+      background-color: #92f8dd;
+      border: 1px solid #7e7e82;
+      outline: 1px solid lightgray;
+    }
   }
 }
 .solidation {

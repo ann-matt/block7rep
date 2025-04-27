@@ -27,6 +27,10 @@ $grayColor: #eaeaea;
   display: flex;
   align-items: center;
 } */
+.block2 {
+  max-width: 1220px;
+  padding-right: 18px;
+}
 
 .block2__title {
   @include title;

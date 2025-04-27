@@ -1,5 +1,6 @@
 $pinkColor: #ff3e79;
 .content {
+  max-width: 1220px;
   display: flex;
   flex-direction: column;
 
@@ -21,6 +22,9 @@ $pinkColor: #ff3e79;
     @media (min-width: 767px) {
       width: 70vw;
       margin-right: 10vw;
+    }
+    @media (min-width: 1440px) {
+      margin-right: 48px;
     }
   }
   &__btn {
@@ -50,10 +54,17 @@ $pinkColor: #ff3e79;
     @media (min-width: 767px) {
       margin-right: 16px;
     }
+    @media (min-width: 1440px) {
+      width: 360px;
+      margin-right: 33px;
+    }
   }
 }
 .photo {
   width: 100%;
+  @media (min-width: 1440px) {
+    width: 530px;
+  }
 }
 
 .readmore-btn.rotated::before {

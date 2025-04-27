@@ -17,3 +17,8 @@ hiddenWrapper.addEventListener('click', function (e) {
     hiddenWrapper.classList.add('hid')
   }
 })
+
+/* if (window.innerWidth >= 1440) {
+  hiddenMenu.classList.remove('hid')
+  hiddenWrapper.classList.remove('hid')
+} */
