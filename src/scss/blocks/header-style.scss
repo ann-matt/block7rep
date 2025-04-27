@@ -28,7 +28,7 @@ $bgColor: #f8f8f8;
 }
 
 .nav {
-  max-width: 1024px;
+  max-width: 1120px;
   margin-left: auto;
   margin-right: auto;
 
@@ -46,7 +46,8 @@ $bgColor: #f8f8f8;
 
   border-bottom: 1px solid $borderColor1;
 
-  @media (min-width: 768px) {
+  @media (min-width: 1440px) {
+    display: none;
   }
 
   &__item {

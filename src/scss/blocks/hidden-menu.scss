@@ -34,6 +34,16 @@ $bgColor: #f8f8f8;
   background-color: rgba(252, 252, 252, 0.938);
   width: 100vw;
   height: 100vh;
+  &.hid {
+    display: none;
+  }
+
+  @media (min-width: 1439px) {
+    width: 320px;
+  }
+  @media (min-width: 1442px) {
+    margin-left: 1%;
+  }
 }
 
 .hidden-menu {
@@ -44,6 +54,13 @@ $bgColor: #f8f8f8;
   padding: 16px 24px;
   display: flex;
   flex-direction: column;
+  &.hid {
+    display: none;
+  }
+  @media (min-width: 1439px) {
+    position: relative;
+  }
+
   &__closeBrg {
     @include icon;
   }
@@ -68,6 +85,9 @@ $bgColor: #f8f8f8;
     align-items: center;
     column-gap: 14px;
     margin-bottom: 20px;
+    @media (min-width: 768px) {
+      margin-bottom: 46px;
+    }
   }
   &__sec2 {
     display: flex;
@@ -133,9 +153,12 @@ $bgColor: #f8f8f8;
       align-items: center;
       column-gap: 7px;
 
-      font-family: 'TT Lakes Bold';
+      font-family: 'TT Lakes Medium';
       font-size: 16px;
       margin-bottom: 32px;
+      & .isActive {
+        color: #7e7e82;
+      }
     }
   }
 }

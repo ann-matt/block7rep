@@ -67,9 +67,15 @@ body {
 }
 
 main {
-  max-width: 1024px;
+  max-width: 1120px;
   margin-right: auto;
   margin-left: auto;
+  @media (min-width: 1440px) {
+    margin-right: 0;
+  }
+  @media (min-width: 1470px) {
+    margin-right: 0%;
+  }
 }
 
 @import './blocks/header-style.scss';
