@@ -190,6 +190,7 @@ header {
 .menu__link {
   color: #7e7e82;
   text-decoration: none;
+  border: 1px solid trasparent;
   border-radius: 10px;
   padding: 8px 16px; }
   .menu__link:hover {
@@ -661,7 +662,7 @@ header {
 
 @media (min-width: 768px) {
   .block4 {
-    padding: 16px; }
+    padding: 16px 0; }
     .block4__table {
       display: flex;
       flex-direction: column;
@@ -687,7 +688,7 @@ header {
     width: 100%;
     height: auto; }
     .card3__btn {
-      margin-right: auto; }
+      margin-right: 10px; }
   h2 {
     display: none; }
   p {
@@ -697,7 +698,7 @@ header {
     align-items: center; } }
 
 .footer {
-  max-width: 1024px;
+  max-width: 1220px;
   margin-right: auto;
   margin-left: auto;
   display: flex;
@@ -721,6 +722,9 @@ header {
     color: #7e7e82; }
   .footer__p {
     text-align: center; }
+    @media (min-width: 1220px) {
+      .footer__p {
+        margin-right: 86px; } }
   @media (min-width: 768px) {
     .footer__one {
       width: 33%; } }
