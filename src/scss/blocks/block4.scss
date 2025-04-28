@@ -108,7 +108,7 @@ $grayColor: #eaeaea;
 
 @media (min-width: 768px) {
   .block4 {
-    padding: 16px;
+    padding: 16px 0;
     &__table {
       display: flex;
       flex-direction: column;
