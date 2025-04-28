@@ -3,7 +3,7 @@ $borderColor1: #b8ffec;
 $grayColor: #eaeaea;
 
 .footer {
-  max-width: 1024px;
+  max-width: 1220px;
   margin-right: auto;
   margin-left: auto;
   display: flex;
@@ -33,6 +33,9 @@ $grayColor: #eaeaea;
   }
   &__p {
     text-align: center;
+    @media (min-width: 1220px) {
+      margin-right: 86px;
+    }
   }
   &__one {
     @media (min-width: 768px) {
